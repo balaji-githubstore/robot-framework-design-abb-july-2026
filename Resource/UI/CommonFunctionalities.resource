@@ -39,6 +39,11 @@ Click Until Element Succeed
     [Arguments]    ${locator}     ${retry}=${default_timeout}s    ${retry_interval}=${small_retry_interval}
     Wait Until Keyword Succeeds    ${retry}    ${retry_interval}    Click Element     ${locator} 
 
-
+Input Text To Element
+    [Arguments]    ${locator}    ${text}    ${timeout}=${default_timeout}s
+    Wait Until Page Contains Element    ${locator}    ${timeout}
+    Wait Until Element Is Visible    ${locator}    ${timeout}
+    Wait Until Element Is Enabled    ${locator}     ${timeout}   
+    Input Text    ${locator}    ${text}
 
 
