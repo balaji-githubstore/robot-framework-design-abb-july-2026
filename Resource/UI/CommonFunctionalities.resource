@@ -2,14 +2,13 @@
 Documentation    Manages all the common functionalities such as browser, report, customized keyword
 ...    to support web ui automation 
 
-Library    SeleniumLibrary
-Variables    ../../Configuration/time-config.yaml
+Library    SeleniumLibrary    
 
+Variables    ../../Configuration/timeout-config.yaml
 
 *** Variables ***
 ${BROWSER}    chrome
 ${URL}    https://demo.openemr.io/b/openemr/
-
 
 *** Keywords ***
 Launch Browser And Navigate To Url 

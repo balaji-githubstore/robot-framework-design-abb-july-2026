@@ -1,0 +1,3 @@
+${testcase};${username};${password};${expected_title}
+TC1;admin;pass;OpenEMR
+TC2;physician;physician;OpenEMR

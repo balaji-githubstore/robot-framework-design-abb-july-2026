@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-07-31T15:13:01.327385" rpa="false" schemaversion="5">
+<suite id="s1" name="Valid Login Suite Test Template Csv" source="D:\Mine\Company\ABB Robot Framework July 2026\MedicalRecordAutomation\TestSuites\WebUITestSuites\LoginSuite\5__valid_login_suite_test_template_csv.robot">
+<test id="s1-t1" name="TC_Valid_Login_TC1" line="15">
+<kw name="Launch Browser And Navigate To Url" owner="CommonFunctionalities" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:01.589249" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-31T15:13:01.588939" elapsed="1.471052"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-31T15:13:03.060351" elapsed="0.025102"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${medium_timeout}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-07-31T15:13:03.085896" elapsed="0.001798"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${default_timeout}s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-07-31T15:13:03.088001" elapsed="0.001726"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:03.090679" level="INFO">Opening url 'https://demo.openemr.io/b/openemr/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-07-31T15:13:03.090100" elapsed="4.772941"/>
+</kw>
+<doc>Use this keyword to launch browser and navigate to url 
+Examples: 
+| Launch Browser And Navigate To Url |</doc>
+<status status="PASS" start="2026-07-31T15:13:01.588222" elapsed="6.275789"/>
+</kw>
+<kw name="Valid Login Template">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:07.872446" level="INFO">Typing text 'admin' into text field 'id=authUser'.</msg>
+<arg>id=authUser</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T15:13:07.869650" elapsed="0.159488"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:08.031252" level="INFO">Typing password into text field 'id=clearPass'.</msg>
+<msg time="2026-07-31T15:13:08.081218" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=clearPass</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T15:13:08.029935" elapsed="0.093359"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:08.124252" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T15:13:08.123700" elapsed="0.050901"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Calendar</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-07-31T15:13:08.174959" elapsed="9.117129"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:17.307230" level="INFO">Page title is 'OpenEMR'.</msg>
+<arg>${expected_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-07-31T15:13:17.293140" elapsed="0.014627"/>
+</kw>
+<arg>username=admin</arg>
+<arg>password=pass</arg>
+<arg>expected_title=OpenEMR</arg>
+<status status="PASS" start="2026-07-31T15:13:07.866065" elapsed="9.442259"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-31T15:13:17.310103" elapsed="2.180388"/>
+</kw>
+<status status="PASS" start="2026-07-31T15:13:01.585010" elapsed="17.906191"/>
+</test>
+<test id="s1-t2" name="TC_Valid_Login_TC2" line="15">
+<kw name="Launch Browser And Navigate To Url" owner="CommonFunctionalities" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:19.513549" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-31T15:13:19.512915" elapsed="1.359669"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-31T15:13:20.872997" elapsed="0.027601"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${medium_timeout}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-07-31T15:13:20.901022" elapsed="0.001392"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${default_timeout}s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-07-31T15:13:20.902647" elapsed="0.001116"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:20.904201" level="INFO">Opening url 'https://demo.openemr.io/b/openemr/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-07-31T15:13:20.903924" elapsed="4.705553"/>
+</kw>
+<doc>Use this keyword to launch browser and navigate to url 
+Examples: 
+| Launch Browser And Navigate To Url |</doc>
+<status status="PASS" start="2026-07-31T15:13:19.512043" elapsed="6.098048"/>
+</kw>
+<kw name="Valid Login Template">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:25.615714" level="INFO">Typing text 'physician' into text field 'id=authUser'.</msg>
+<arg>id=authUser</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T15:13:25.614637" elapsed="0.148061"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:25.764652" level="INFO">Typing password into text field 'id=clearPass'.</msg>
+<msg time="2026-07-31T15:13:25.808779" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=clearPass</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T15:13:25.763414" elapsed="0.124042"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:25.889271" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T15:13:25.888145" elapsed="0.057013"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Calendar</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-07-31T15:13:25.945595" elapsed="8.963061"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-07-31T15:13:34.923440" level="INFO">Page title is 'OpenEMR'.</msg>
+<arg>${expected_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-07-31T15:13:34.909602" elapsed="0.014631"/>
+</kw>
+<arg>username=physician</arg>
+<arg>password=physician</arg>
+<arg>expected_title=OpenEMR</arg>
+<status status="PASS" start="2026-07-31T15:13:25.612384" elapsed="9.312358"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-31T15:13:34.926623" elapsed="2.210295"/>
+</kw>
+<status status="PASS" start="2026-07-31T15:13:19.502599" elapsed="17.634950"/>
+</test>
+<doc>Test Suite validates all valid login scenario</doc>
+<status status="PASS" start="2026-07-31T15:13:01.333699" elapsed="35.813289"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Valid Login Suite Test Template Csv" id="s1" pass="2" fail="0" skip="0">Valid Login Suite Test Template Csv</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,7 +1,9 @@
 *** Settings ***
-Documentation    Test Suite validates all valid login scenario 
+Documentation    Test Suite validates all valid login scenario
 
 Resource    ../../../Resource/UI/CommonFunctionalities.resource
+
+Library    DataDriver   file=../../../Data/ValidLoginData.csv
 
 Test Setup    Launch Browser And Navigate To Url
 Test Teardown    Close Browser
@@ -10,14 +12,8 @@ Test Template    Valid Login Template
 
 
 *** Test Cases ***
-TC1
-    admin    pass    OpenEMR
+TC_Valid_Login_${testcase}
 
-TC2
-    accountant    accountant    OpenEMR
-    
-TC3
-    physician    physician    OpenEMR
 
 *** Keywords ***
 Valid Login Template
@@ -27,8 +23,3 @@ Valid Login Template
     Click Element    id=login-button
     Wait Until Page Contains     Calendar    timeout=30s
     Title Should Be    ${expected_title}
-
-
-Print Name Template
-    [Arguments]    ${name} 
-    Log To Console    ${name} 
