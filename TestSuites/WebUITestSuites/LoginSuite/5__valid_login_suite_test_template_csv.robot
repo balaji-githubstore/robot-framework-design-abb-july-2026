@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Test Suite validates all valid login scenario
 
-Resource    ../../../Resource/UI/CommonFunctionalities.resource
+Resource    ../../../Resource/UI/CommonFunctionalities.resource  
 
 Library    DataDriver   file=../../../Data/ValidLoginData.csv
 
