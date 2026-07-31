@@ -3,6 +3,7 @@ Documentation    Manages all the common functionalities such as browser, report,
 ...    to support web ui automation 
 
 Library    SeleniumLibrary
+Variables    ../../Configuration/time-config.yaml
 
 
 *** Variables ***

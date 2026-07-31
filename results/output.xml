@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-07-31T12:40:20.618643" rpa="false" schemaversion="5">
+<suite id="s1" name="MedicalRecordAutomation" source="D:\Mine\Company\ABB Robot Framework July 2026\MedicalRecordAutomation">
+<suite id="s1-s1" name="TestSuites" source="D:\Mine\Company\ABB Robot Framework July 2026\MedicalRecordAutomation\TestSuites">
+<suite id="s1-s1-s1" name="WebUITestSuites" source="D:\Mine\Company\ABB Robot Framework July 2026\MedicalRecordAutomation\TestSuites\WebUITestSuites">
+<suite id="s1-s1-s1-s1" name="LoginSuite" source="D:\Mine\Company\ABB Robot Framework July 2026\MedicalRecordAutomation\TestSuites\WebUITestSuites\LoginSuite">
+<suite id="s1-s1-s1-s1-s1" name="Valid Login Suite" source="D:\Mine\Company\ABB Robot Framework July 2026\MedicalRecordAutomation\TestSuites\WebUITestSuites\LoginSuite\1__valid_login_suite.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Verify Valid Login Test" line="10">
+<kw name="Launch Browser And Navigate To Url" owner="CommonFunctionalities" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-31T12:40:24.404221" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-31T12:40:22.941920" elapsed="2.402375"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-31T12:40:25.344564" elapsed="1.336264"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${medium_timeout}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-07-31T12:40:26.681412" elapsed="0.668880"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${default_timeout}s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-07-31T12:40:27.350972" elapsed="10.583894"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-07-31T12:40:39.091437" level="INFO">Opening url 'https://demo.openemr.io/b/openemr/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-07-31T12:40:37.935271" elapsed="4.092743"/>
+</kw>
+<doc>Use this keyword to launch browser and navigate to url 
+Examples: 
+| Launch Browser And Navigate To Url |</doc>
+<status status="PASS" start="2026-07-31T12:40:20.876892" elapsed="21.151405"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-31T12:40:43.356462" level="INFO">Typing text 'admin' into text field 'id=authUser'.</msg>
+<arg>id=authUser</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T12:40:42.028812" elapsed="1.486967"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-31T12:40:45.651509" level="INFO">Typing password into text field 'id=clearPass'.</msg>
+<msg time="2026-07-31T12:40:45.700861" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=clearPass</arg>
+<arg>pass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T12:40:43.516579" elapsed="2.248693"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-07-31T12:40:46.426961" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-31T12:40:45.766231" elapsed="0.774048"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-07-31T12:40:55.418993" level="INFO">Page title is 'OpenEMR'.</msg>
+<arg>OpenEMR</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-07-31T12:40:46.541054" elapsed="8.879537"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-31T12:40:55.422364" elapsed="4.795392"/>
+</kw>
+<status status="PASS" start="2026-07-31T12:40:20.873878" elapsed="39.344786"/>
+</test>
+<doc>Test Suite validates all valid login scenario</doc>
+<status status="PASS" start="2026-07-31T12:40:20.665986" elapsed="39.562716"/>
+</suite>
+<status status="PASS" start="2026-07-31T12:40:20.660051" elapsed="39.582546"/>
+</suite>
+<status status="PASS" start="2026-07-31T12:40:20.655990" elapsed="39.592328"/>
+</suite>
+<status status="PASS" start="2026-07-31T12:40:20.647565" elapsed="39.617245"/>
+</suite>
+<status status="PASS" start="2026-07-31T12:40:20.623172" elapsed="39.656686"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="MedicalRecordAutomation" id="s1" pass="1" fail="0" skip="0">MedicalRecordAutomation</stat>
+<stat name="TestSuites" id="s1-s1" pass="1" fail="0" skip="0">MedicalRecordAutomation.TestSuites</stat>
+<stat name="WebUITestSuites" id="s1-s1-s1" pass="1" fail="0" skip="0">MedicalRecordAutomation.TestSuites.WebUITestSuites</stat>
+<stat name="LoginSuite" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">MedicalRecordAutomation.TestSuites.WebUITestSuites.LoginSuite</stat>
+<stat name="Valid Login Suite" id="s1-s1-s1-s1-s1" pass="1" fail="0" skip="0">MedicalRecordAutomation.TestSuites.WebUITestSuites.LoginSuite.Valid Login Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
