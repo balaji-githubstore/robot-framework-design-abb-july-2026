@@ -8,7 +8,7 @@ Test Teardown    Close Browser
 
 *** Test Cases ***
 Verify Valid Login Test
-    Input Text    id=authUser    admin
-    Input Password    id=clearPass    pass
+    Input Text    id=authUser    physician
+    Input Password    id=clearPass    physician
     Click Element    id=login-button
     Title Should Be    OpenEMR
